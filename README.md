@@ -1,10 +1,16 @@
 # OpenClaw Binance AI Agent
 
+![cover](docs/assets/cover.svg)
+
 基于 OpenClaw 的“币安主题 AI Agent”最小可复现项目，包含：
 
 - Agent 配置脚本（自动创建 `binance-ai` Agent）
 - 币安创新顾问指令模板（`AGENTS.md` / `IDENTITY.md`）
 - 一键图文 Demo 脚本（自动跑多轮问答并生成 Markdown 展示稿）
+
+## 首屏演示图
+
+![demo-first-screen](docs/assets/demo-first-screen.svg)
 
 ## 快速开始
 
@@ -17,6 +23,12 @@ bash scripts/run_demo.sh
 运行结束后会输出图文文件路径，例如：
 
 `/root/openclaw/binance_ai_agent/docs/generated_demo_2026-03-04_220000.md`
+
+## 输出文件
+
+- 一页展示：[docs/showcase.md](docs/showcase.md)
+- 最新图文稿：[docs/demo_latest.md](docs/demo_latest.md)
+- 历史图文稿：`docs/generated_demo_*.md`
 
 ## 可调参数
 

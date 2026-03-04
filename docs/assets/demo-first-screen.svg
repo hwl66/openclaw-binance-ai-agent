@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d12"/>
+      <stop offset="100%" stop-color="#151b22"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="760" fill="url(#bg)"/>
+  <rect x="70" y="54" width="1140" height="652" rx="16" fill="#0f141b" stroke="#2b3139" stroke-width="2" filter="url(#shadow)"/>
+
+  <rect x="70" y="54" width="1140" height="44" rx="16" fill="#1b2129"/>
+  <circle cx="98" cy="76" r="7" fill="#ff5f56"/>
+  <circle cx="121" cy="76" r="7" fill="#ffbd2e"/>
+  <circle cx="144" cy="76" r="7" fill="#27c93f"/>
+  <text x="188" y="82" font-size="18" fill="#9aa4af" font-family="DejaVu Sans Mono, monospace">
+    demo · openclaw agent --agent binance-ai --local
+  </text>
+
+  <text x="100" y="136" font-size="25" fill="#f0b90b" font-family="DejaVu Sans Mono, monospace">
+    $ openclaw agent --agent binance-ai --local --message "你觉得币安有哪些功能或服务可以通过AI实现创新和优化？"
+  </text>
+
+  <text x="100" y="186" font-size="24" fill="#e6edf3" font-family="DejaVu Sans Mono, monospace">
+    一句话结论：优先做 AI 风险预警 + 客服自动化 + 个性化交易助手。
+  </text>
+  <text x="100" y="228" font-size="22" fill="#8b949e" font-family="DejaVu Sans Mono, monospace">
+    - 智能风控：异常交易识别、盗号检测、洗钱路径提示
+  </text>
+  <text x="100" y="266" font-size="22" fill="#8b949e" font-family="DejaVu Sans Mono, monospace">
+    - 用户增长：分层投教、个性化提醒、策略解释
+  </text>
+  <text x="100" y="304" font-size="22" fill="#8b949e" font-family="DejaVu Sans Mono, monospace">
+    - 2周MVP：规则引擎 + 轻模型 + 站内/Telegram 告警闭环
+  </text>
+
+  <text x="100" y="366" font-size="24" fill="#f0b90b" font-family="DejaVu Sans Mono, monospace">
+    $ bash scripts/run_demo.sh
+  </text>
+  <text x="100" y="408" font-size="21" fill="#7ee787" font-family="DejaVu Sans Mono, monospace">
+    [OK] 图文演示已生成：docs/generated_demo_2026-03-04_220113.md
+  </text>
+
+  <rect x="100" y="444" width="1080" height="218" rx="10" fill="#111822" stroke="#22303d"/>
+  <text x="128" y="486" font-size="19" fill="#f0b90b" font-family="DejaVu Sans Mono, monospace">
+    复现命令
+  </text>
+  <text x="128" y="522" font-size="18" fill="#c9d1d9" font-family="DejaVu Sans Mono, monospace">
+    cd /root/openclaw/binance_ai_agent
+  </text>
+  <text x="128" y="554" font-size="18" fill="#c9d1d9" font-family="DejaVu Sans Mono, monospace">
+    bash scripts/setup_binance_ai_agent.sh
+  </text>
+  <text x="128" y="586" font-size="18" fill="#c9d1d9" font-family="DejaVu Sans Mono, monospace">
+    bash scripts/run_demo.sh
+  </text>
+  <text x="128" y="630" font-size="17" fill="#8b949e" font-family="DejaVu Sans Mono, monospace">
+    output: docs/demo_latest.md
+  </text>
+</svg>
