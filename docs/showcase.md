@@ -48,3 +48,4 @@ bash scripts/run_demo.sh
 
 - 最新图文稿：`docs/demo_latest.md`
 - 历史图文稿：`docs/generated_demo_*.md`
+- 演示视频：`docs/assets/demo.mp4`

@@ -12,6 +12,15 @@
 
 ![demo-first-screen](docs/assets/demo-first-screen.svg)
 
+## 演示视频
+
+- 直接下载：[`docs/assets/demo.mp4`](docs/assets/demo.mp4)
+- 重新生成：
+
+```bash
+bash scripts/generate_demo_video.sh
+```
+
 ## 快速开始
 
 ```bash
@@ -28,6 +37,7 @@ bash scripts/run_demo.sh
 
 - 一页展示：[docs/showcase.md](docs/showcase.md)
 - 最新图文稿：[docs/demo_latest.md](docs/demo_latest.md)
+- 演示视频：[docs/assets/demo.mp4](docs/assets/demo.mp4)
 - 历史图文稿：`docs/generated_demo_*.md`
 
 ## 可调参数
