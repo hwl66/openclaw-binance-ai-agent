@@ -26,15 +26,15 @@ Dialogue: 0,0:00:20.00,0:00:35.00,Bullet,,0,0,0,,2) Product and engineering are 
 Dialogue: 0,0:00:24.50,0:00:35.00,Bullet,,0,0,0,,3) No standard demo assets for showcase
 
 Dialogue: 0,0:00:35.00,0:00:55.00,Title,,0,0,0,,How It Works
-Dialogue: 0,0:00:36.00,0:00:55.00,Accent,,0,0,0,,$ bash scripts/setup_binance_ai_agent.sh
-Dialogue: 0,0:00:40.50,0:00:55.00,Accent,,0,0,0,,$ bash scripts/run_demo.sh
+Dialogue: 0,0:00:36.00,0:00:55.00,Accent,,0,0,0,,$ bash scripts/初始化币安智能体.sh
+Dialogue: 0,0:00:40.50,0:00:55.00,Accent,,0,0,0,,$ bash scripts/生成图文演示.sh
 Dialogue: 0,0:00:45.00,0:00:55.00,Bullet,,0,0,0,,Auto-generate answers: innovation + KPI + 2-week MVP
 
 Dialogue: 0,0:00:55.00,0:01:15.00,Title,,0,0,0,,Output Assets
-Dialogue: 0,0:00:56.00,0:01:15.00,Bullet,,0,0,0,,• docs/demo_latest.md
-Dialogue: 0,0:01:00.00,0:01:15.00,Bullet,,0,0,0,,• docs/showcase.md
-Dialogue: 0,0:01:04.00,0:01:15.00,Bullet,,0,0,0,,• docs/assets/demo-cn-2min.mp4
-Dialogue: 0,0:01:08.00,0:01:15.00,Bullet,,0,0,0,,• docs/assets/demo-cn-voice.mp3
+Dialogue: 0,0:00:56.00,0:01:15.00,Bullet,,0,0,0,,• docs/最新演示稿.md
+Dialogue: 0,0:01:00.00,0:01:15.00,Bullet,,0,0,0,,• docs/一页展示.md
+Dialogue: 0,0:01:04.00,0:01:15.00,Bullet,,0,0,0,,• docs/assets/中文配音演示视频_2分钟.mp4
+Dialogue: 0,0:01:08.00,0:01:15.00,Bullet,,0,0,0,,• docs/assets/中文配音音轨.mp3
 
 Dialogue: 0,0:01:15.00,0:01:35.00,Title,,0,0,0,,Feature Optimization Done
 Dialogue: 0,0:01:16.00,0:01:35.00,Bullet,,0,0,0,,• Prompt list is now configurable by file

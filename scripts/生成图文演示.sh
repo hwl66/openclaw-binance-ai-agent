@@ -4,14 +4,14 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 AGENT_ID="${AGENT_ID:-binance-ai}"
 OUT_DIR="${OUT_DIR:-${ROOT_DIR}/docs}"
-PROMPTS_FILE="${PROMPTS_FILE:-${ROOT_DIR}/scripts/demo_prompts_cn.txt}"
+PROMPTS_FILE="${PROMPTS_FILE:-${ROOT_DIR}/scripts/演示问题清单.txt}"
 AGENT_TIMEOUT_SEC="${AGENT_TIMEOUT_SEC:-180}"
 mkdir -p "${OUT_DIR}"
 
-bash "${ROOT_DIR}/scripts/setup_binance_ai_agent.sh" >/dev/null
+bash "${ROOT_DIR}/scripts/初始化币安智能体.sh" >/dev/null
 
 TS="$(date '+%Y-%m-%d_%H%M%S')"
-OUT_FILE="${OUT_DIR}/generated_demo_${TS}.md"
+OUT_FILE="${OUT_DIR}/历史演示稿_${TS}.md"
 TURN_INDEX=0
 
 strip_ansi() {
@@ -75,6 +75,6 @@ else
   run_turn "如果接入币安公开API，请给出最小技术架构与开发任务拆解（后端/前端/数据）。"
 fi
 
-cp "${OUT_FILE}" "${OUT_DIR}/demo_latest.md"
+cp "${OUT_FILE}" "${OUT_DIR}/最新演示稿.md"
 
 echo "[OK] 图文演示已生成：${OUT_FILE}"

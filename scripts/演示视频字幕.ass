@@ -24,10 +24,10 @@ Dialogue: 0,0:00:05.10,0:00:09.00,Bullet,,0,0,0,,• One-command markdown demo g
 Dialogue: 0,0:00:06.00,0:00:09.00,Bullet,,0,0,0,,• Output includes roadmap, KPI, API architecture
 Dialogue: 0,0:00:09.00,0:00:15.00,Title,,0,0,0,,How to run
 Dialogue: 0,0:00:09.40,0:00:15.00,Accent,,0,0,0,,$ cd /root/openclaw/binance_ai_agent
-Dialogue: 0,0:00:10.30,0:00:15.00,Accent,,0,0,0,,$ bash scripts/setup_binance_ai_agent.sh
-Dialogue: 0,0:00:11.20,0:00:15.00,Accent,,0,0,0,,$ bash scripts/run_demo.sh
+Dialogue: 0,0:00:10.30,0:00:15.00,Accent,,0,0,0,,$ bash scripts/初始化币安智能体.sh
+Dialogue: 0,0:00:11.20,0:00:15.00,Accent,,0,0,0,,$ bash scripts/生成图文演示.sh
 Dialogue: 0,0:00:15.00,0:00:21.00,Title,,0,0,0,,Generated Assets
-Dialogue: 0,0:00:15.40,0:00:21.00,Bullet,,0,0,0,,• docs/demo_latest.md
-Dialogue: 0,0:00:16.20,0:00:21.00,Bullet,,0,0,0,,• docs/showcase.md
-Dialogue: 0,0:00:17.00,0:00:21.00,Bullet,,0,0,0,,• docs/assets/demo.mp4
+Dialogue: 0,0:00:15.40,0:00:21.00,Bullet,,0,0,0,,• docs/最新演示稿.md
+Dialogue: 0,0:00:16.20,0:00:21.00,Bullet,,0,0,0,,• docs/一页展示.md
+Dialogue: 0,0:00:17.00,0:00:21.00,Bullet,,0,0,0,,• docs/assets/英文演示视频.mp4
 Dialogue: 0,0:00:18.20,0:00:21.00,Footer,,0,0,0,,GitHub: hwl66/openclaw-binance-ai-agent

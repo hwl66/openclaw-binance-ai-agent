@@ -2,8 +2,8 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-OUT_FILE="${1:-${ROOT_DIR}/docs/assets/demo.mp4}"
-ASS_FILE="${ROOT_DIR}/scripts/demo_video.ass"
+OUT_FILE="${1:-${ROOT_DIR}/docs/assets/英文演示视频.mp4}"
+ASS_FILE="${ROOT_DIR}/scripts/演示视频字幕.ass"
 
 if [[ ! -f "${ASS_FILE}" ]]; then
   echo "[ERROR] ASS subtitle file not found: ${ASS_FILE}"

@@ -28,8 +28,8 @@ else
 fi
 
 mkdir -p "${WORKSPACE}"
-cp "${ROOT_DIR}/templates/AGENTS.md" "${WORKSPACE}/AGENTS.md"
-cp "${ROOT_DIR}/templates/IDENTITY.md" "${WORKSPACE}/IDENTITY.md"
+cp "${ROOT_DIR}/templates/智能体规则模板.md" "${WORKSPACE}/AGENTS.md"
+cp "${ROOT_DIR}/templates/智能体身份模板.md" "${WORKSPACE}/IDENTITY.md"
 
 openclaw agents set-identity \
   --agent "${AGENT_ID}" \

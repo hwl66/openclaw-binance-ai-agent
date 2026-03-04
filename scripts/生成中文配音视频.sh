@@ -6,10 +6,10 @@ TARGET_DURATION_SEC="${TARGET_DURATION_SEC:-120}"
 VOICE_NAME="${VOICE_NAME:-zh-CN-XiaoxiaoNeural}"
 VOICE_RATE="${VOICE_RATE:-+10%}"
 
-NARRATION_FILE="${NARRATION_FILE:-${ROOT_DIR}/scripts/demo_narration_cn.txt}"
-ASS_FILE="${ASS_FILE:-${ROOT_DIR}/scripts/demo_video_cn_2min.ass}"
-VOICE_OUT="${VOICE_OUT:-${ROOT_DIR}/docs/assets/demo-cn-voice.mp3}"
-VIDEO_OUT="${VIDEO_OUT:-${ROOT_DIR}/docs/assets/demo-cn-2min.mp4}"
+NARRATION_FILE="${NARRATION_FILE:-${ROOT_DIR}/scripts/中文配音文案.txt}"
+ASS_FILE="${ASS_FILE:-${ROOT_DIR}/scripts/中文配音视频字幕_2分钟.ass}"
+VOICE_OUT="${VOICE_OUT:-${ROOT_DIR}/docs/assets/中文配音音轨.mp3}"
+VIDEO_OUT="${VIDEO_OUT:-${ROOT_DIR}/docs/assets/中文配音演示视频_2分钟.mp4}"
 
 if [[ ! -f "${NARRATION_FILE}" ]]; then
   echo "[ERROR] narration file not found: ${NARRATION_FILE}"
@@ -48,7 +48,7 @@ trap cleanup EXIT
 
 mkdir -p "$(dirname "${VOICE_OUT}")" "$(dirname "${VIDEO_OUT}")"
 
-node "${ROOT_DIR}/scripts/tts_from_file.js" \
+node "${ROOT_DIR}/scripts/文本转语音.js" \
   "${NARRATION_FILE}" \
   "${TMP_RAW_MP3}" \
   "${VOICE_NAME}" \

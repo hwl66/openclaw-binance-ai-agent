@@ -10,7 +10,7 @@ async function main() {
   const rate = process.argv[5] || "default";
 
   if (!textFile || !outFile) {
-    console.error("Usage: node scripts/tts_from_file.js <text_file> <out_mp3> [voice] [rate]");
+    console.error("Usage: node scripts/文本转语音.js <text_file> <out_mp3> [voice] [rate]");
     process.exit(1);
   }
 
