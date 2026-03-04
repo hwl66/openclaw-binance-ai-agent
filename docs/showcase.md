@@ -13,6 +13,7 @@
 - 输出“创新点 + 落地路径 + KPI + 2周MVP”
 - 支持产品、技术、数据三层拆解
 - 默认中文，结论优先，强调可执行
+- 支持 2 分钟中文配音视频自动生成
 
 ## 最小架构图（图文）
 
@@ -27,7 +28,7 @@ OpenClaw Agent (binance-ai)
    +--> API接入方案（技术层）
    |
    v
-Markdown 图文演示稿
+Markdown 图文演示稿 + 中文配音视频
 ```
 
 ## 核心演示问题
@@ -40,8 +41,7 @@ Markdown 图文演示稿
 
 ```bash
 cd /root/openclaw/binance_ai_agent
-bash scripts/setup_binance_ai_agent.sh
-bash scripts/run_demo.sh
+bash scripts/build_all.sh
 ```
 
 ## 演示产物
@@ -49,3 +49,5 @@ bash scripts/run_demo.sh
 - 最新图文稿：`docs/demo_latest.md`
 - 历史图文稿：`docs/generated_demo_*.md`
 - 演示视频：`docs/assets/demo.mp4`
+- 中文 2 分钟视频：`docs/assets/demo-cn-2min.mp4`
+- 中文配音音轨：`docs/assets/demo-cn-voice.mp3`

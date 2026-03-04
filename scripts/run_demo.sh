@@ -4,12 +4,15 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 AGENT_ID="${AGENT_ID:-binance-ai}"
 OUT_DIR="${OUT_DIR:-${ROOT_DIR}/docs}"
+PROMPTS_FILE="${PROMPTS_FILE:-${ROOT_DIR}/scripts/demo_prompts_cn.txt}"
+AGENT_TIMEOUT_SEC="${AGENT_TIMEOUT_SEC:-180}"
 mkdir -p "${OUT_DIR}"
 
 bash "${ROOT_DIR}/scripts/setup_binance_ai_agent.sh" >/dev/null
 
 TS="$(date '+%Y-%m-%d_%H%M%S')"
 OUT_FILE="${OUT_DIR}/generated_demo_${TS}.md"
+TURN_INDEX=0
 
 strip_ansi() {
   perl -pe 's/\e\[[0-9;]*[A-Za-z]//g'
@@ -18,19 +21,20 @@ strip_ansi() {
 run_turn() {
   local prompt="$1"
   local response
+  TURN_INDEX=$((TURN_INDEX + 1))
 
-  if ! response="$(openclaw agent --agent "${AGENT_ID}" --local --timeout 180 --message "${prompt}" 2>&1)"; then
+  if ! response="$(openclaw agent --agent "${AGENT_ID}" --local --timeout "${AGENT_TIMEOUT_SEC}" --message "${prompt}" 2>&1)"; then
     response="[ERROR] openclaw 调用失败：${response}"
   fi
 
   {
-    echo "## 用户提问"
+    echo "## 用户提问 ${TURN_INDEX}"
     echo
     echo '```text'
     echo "${prompt}"
     echo '```'
     echo
-    echo "## Agent 回复"
+    echo "## Agent 回复 ${TURN_INDEX}"
     echo
     echo '```text'
     printf '%s\n' "${response}" | strip_ansi
@@ -56,8 +60,21 @@ cat >"${OUT_FILE}" <<EOF
 
 EOF
 
-run_turn "你觉得币安有哪些功能或服务可以通过AI实现创新和优化？"
-run_turn "请针对“币安用户的AI风险预警+资产体检”给一个2周MVP计划，要求包含数据源、模型方案、KPI。"
-run_turn "如果接入币安公开API，请给出最小技术架构与开发任务拆解（后端/前端/数据）。"
+if [[ -f "${PROMPTS_FILE}" ]]; then
+  while IFS= read -r line || [[ -n "$line" ]]; do
+    line="${line#"${line%%[![:space:]]*}"}"
+    line="${line%"${line##*[![:space:]]}"}"
+    if [[ -z "${line}" || "${line}" == \#* ]]; then
+      continue
+    fi
+    run_turn "${line}"
+  done < "${PROMPTS_FILE}"
+else
+  run_turn "你觉得币安有哪些功能或服务可以通过AI实现创新和优化？"
+  run_turn "请针对“币安用户的AI风险预警+资产体检”给一个2周MVP计划，要求包含数据源、模型方案、KPI。"
+  run_turn "如果接入币安公开API，请给出最小技术架构与开发任务拆解（后端/前端/数据）。"
+fi
+
+cp "${OUT_FILE}" "${OUT_DIR}/demo_latest.md"
 
 echo "[OK] 图文演示已生成：${OUT_FILE}"

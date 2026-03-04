@@ -1,0 +1,50 @@
+[Script Info]
+Title: OpenClaw Binance AI Agent CN Voice Demo 2min
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,DejaVu Sans,62,&H000BB9F0,&H000BB9F0,&H00101010,&H55000000,-1,0,0,0,100,100,0,0,1,2,0,8,70,70,48,1
+Style: Body,DejaVu Sans,36,&H00F3F7FA,&H00F3F7FA,&H00101010,&H55000000,0,0,0,0,100,100,0,0,1,1,0,8,70,70,132,1
+Style: Bullet,DejaVu Sans,31,&H00B6C2CF,&H00B6C2CF,&H00101010,&H55000000,0,0,0,0,100,100,0,0,1,1,0,7,90,90,228,1
+Style: Accent,DejaVu Sans Mono,30,&H000BB9F0,&H000BB9F0,&H00101010,&H55000000,-1,0,0,0,100,100,0,0,1,1,0,7,90,90,308,1
+Style: Footer,DejaVu Sans,26,&H007EE787,&H007EE787,&H00101010,&H55000000,0,0,0,0,100,100,0,0,1,1,0,2,80,80,54,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:15.00,Title,,0,0,0,,OpenClaw x Binance AI Agent
+Dialogue: 0,0:00:00.00,0:00:15.00,Body,,0,0,0,,Chinese Voiceover Demo · 2 Minutes
+Dialogue: 0,0:00:03.50,0:00:15.00,Bullet,,0,0,0,,Turn AI ideas into runnable plans, docs and assets.
+
+Dialogue: 0,0:00:15.00,0:00:35.00,Title,,0,0,0,,What Problems It Solves
+Dialogue: 0,0:00:15.50,0:00:35.00,Bullet,,0,0,0,,1) Too many ideas, no clear priority
+Dialogue: 0,0:00:20.00,0:00:35.00,Bullet,,0,0,0,,2) Product and engineering are hard to align
+Dialogue: 0,0:00:24.50,0:00:35.00,Bullet,,0,0,0,,3) No standard demo assets for showcase
+
+Dialogue: 0,0:00:35.00,0:00:55.00,Title,,0,0,0,,How It Works
+Dialogue: 0,0:00:36.00,0:00:55.00,Accent,,0,0,0,,$ bash scripts/setup_binance_ai_agent.sh
+Dialogue: 0,0:00:40.50,0:00:55.00,Accent,,0,0,0,,$ bash scripts/run_demo.sh
+Dialogue: 0,0:00:45.00,0:00:55.00,Bullet,,0,0,0,,Auto-generate answers: innovation + KPI + 2-week MVP
+
+Dialogue: 0,0:00:55.00,0:01:15.00,Title,,0,0,0,,Output Assets
+Dialogue: 0,0:00:56.00,0:01:15.00,Bullet,,0,0,0,,• docs/demo_latest.md
+Dialogue: 0,0:01:00.00,0:01:15.00,Bullet,,0,0,0,,• docs/showcase.md
+Dialogue: 0,0:01:04.00,0:01:15.00,Bullet,,0,0,0,,• docs/assets/demo-cn-2min.mp4
+Dialogue: 0,0:01:08.00,0:01:15.00,Bullet,,0,0,0,,• docs/assets/demo-cn-voice.mp3
+
+Dialogue: 0,0:01:15.00,0:01:35.00,Title,,0,0,0,,Feature Optimization Done
+Dialogue: 0,0:01:16.00,0:01:35.00,Bullet,,0,0,0,,• Prompt list is now configurable by file
+Dialogue: 0,0:01:20.50,0:01:35.00,Bullet,,0,0,0,,• One-click full build pipeline
+Dialogue: 0,0:01:25.00,0:01:35.00,Bullet,,0,0,0,,• Chinese TTS + 120s video auto composition
+
+Dialogue: 0,0:01:35.00,0:01:55.00,Title,,0,0,0,,Business Value
+Dialogue: 0,0:01:36.00,0:01:55.00,Bullet,,0,0,0,,1) Shorten idea-to-delivery cycle
+Dialogue: 0,0:01:40.00,0:01:55.00,Bullet,,0,0,0,,2) Unify product / engineering / data communication
+Dialogue: 0,0:01:44.00,0:01:55.00,Bullet,,0,0,0,,3) Build reusable demo assets for team and clients
+
+Dialogue: 0,0:01:55.00,0:02:00.00,Title,,0,0,0,,OpenClaw Binance AI Agent
+Dialogue: 0,0:01:55.00,0:02:00.00,Footer,,0,0,0,,GitHub: hwl66/openclaw-binance-ai-agent
